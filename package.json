@@ -1,0 +1,30 @@
+{
+  "name": "event_Management",
+  "version": "1.0.0",
+  "description": "Create the Event: Use your event planning app to create the event and enter all the relevant details such as the event name, date, time, and location.",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd server && npm i && cd ../client && npm i",
+    "dev": "concurrently \"npm run client\" \"npm run server\" ",
+    "build": "cd client && npm run build",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amalahema/event_Management.git"
+  },
+  "keywords": [],
+  "author": "Amala Hema Francis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amalahema/event_Management/issues"
+  },
+  "homepage": "https://github.com/amalahema/event_Management#readme",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "mongoose": "^7.2.4",
+    "nodemon": "^2.0.22"
+  }
+}
