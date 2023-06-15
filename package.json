@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Create the Event: Use your event planning app to create the event and enter all the relevant details such as the event name, date, time, and location.",
   "main": "index.js",
+  "private": true,
+  "proxy": "http://127.0.0.1:3001/",
   "scripts": {
     "install": "cd server && npm i && cd ../client && npm i",
     "dev": "concurrently \"npm run client\" \"npm run server\" ",

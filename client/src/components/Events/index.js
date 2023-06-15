@@ -1,3 +1,6 @@
+//==================================
+//view events after login page
+//==================================
 import { VIEW_EVENTS } from '../../utils/queries';
 import { useQuery } from '@apollo/client';
 

@@ -1,20 +1,4 @@
-// const express = require("express");
-// const models = require("./models");
 
-
-// // Apollo-server-express (deprecates in Oct 2023 to @apollo/server)
-// const { ApolloServer } = require('apollo-server-express');
-// const db = require("./config/connection");
-// const app = express();
-
-// app.use(express.urlencoded({extended: false}));
-// app.use(express.json());
-
-// const PORT = process.env.PORT || 3001;
-// app.listen(PORT, () =>
-// {
-//     console.log("Server is running on PORT 3001!");
-// })
 const express = require("express");
 const path = require("path");
 // Apollo-server-express (deprecates in Oct 2023 to @apollo/server. Keep in mind!)
