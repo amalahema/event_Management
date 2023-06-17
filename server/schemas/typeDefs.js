@@ -18,6 +18,15 @@ const typeDefs = gql`
 
     type Mutation {
         addEvent(eventName: String!, eventDescription: String!, eventDate: String!, eventTime: String!, location: String!): Events
+        updateEvent(
+            eventId: ID!
+            eventName: String
+            eventDescription: String
+            eventDate: String
+            eventTime: String
+            location: String
+        ): Events
+        deleteEvent(eventId: ID!): Events
     }
 `;
 
