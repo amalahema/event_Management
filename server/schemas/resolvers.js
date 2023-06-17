@@ -28,6 +28,15 @@ const resolvers = {
               // Handle any errors
               throw new Error('Failed to update the event.');
             }
+          },
+          deleteEvent: async (parent, { eventId }) => {
+            try {
+              const deletedEvent = await Events.findByIdAndDelete(eventId);
+              return deletedEvent;
+            } catch (error) {
+              // Handle any errors
+              throw new Error('Failed to delete the event.');
+            }
           }
         }
     };

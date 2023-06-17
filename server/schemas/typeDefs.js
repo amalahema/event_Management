@@ -26,6 +26,7 @@ const typeDefs = gql`
             eventTime: String
             location: String
         ): Events
+        deleteEvent(eventId: ID!): Events
     }
 `;
 

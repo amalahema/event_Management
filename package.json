@@ -27,6 +27,7 @@
   "dependencies": {
     "concurrently": "^8.2.0",
     "mongoose": "^7.2.4",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "react-datepicker": "^4.14.0"
   }
 }

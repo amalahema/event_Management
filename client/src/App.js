@@ -16,10 +16,11 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className = "text-3xl font-bold underline">
-      Data fetched from mongo  database
+
+    
      
        <Events />
-       you can addd new event
+   
        <EventForm />
       </div>
     </ApolloProvider>
